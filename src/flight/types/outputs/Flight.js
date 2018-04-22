@@ -75,16 +75,22 @@ export default new GraphQLObjectType({
       resolve: async (
         { passengers, price, bookingToken }: Flight,
         args: Object,
-        { dataLoader, options }: GraphqlContextType,
+        { dataLoader, options, locale }: GraphqlContextType,
         { path }: GraphQLResolveInfo,
       ): Promise<string> => {
         const queryOptions = options.getOptions(path);
-        const locale = queryOptions ? queryOptions.locale : null;
+        const oldWayLocale = queryOptions ? queryOptions.locale : null;
+        let useLocale = oldWayLocale;
+
+        if (!oldWayLocale) {
+          useLocale = locale;
+        }
+
         return await buildBookingUrl(
           passengers,
           price,
           bookingToken,
-          locale,
+          useLocale,
           dataLoader.rates,
         );
       },

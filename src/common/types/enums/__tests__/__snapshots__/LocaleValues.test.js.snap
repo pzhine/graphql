@@ -3,201 +3,267 @@
 exports[`LocaleValues should be properly generated from LocaleMap 1`] = `
 Object {
   "ar_AE": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "ar-AE",
   },
   "ar_BH": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "ar-BH",
   },
   "ar_JO": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "ar-JO",
   },
   "ar_KW": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "ar-KW",
   },
   "ar_OM": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "ar-OM",
   },
   "ar_QA": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "ar-QA",
   },
   "ar_SA": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "ar-SA",
   },
   "bg_BG": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "bg-BG",
   },
   "ca_ES": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "ca-ES",
   },
   "cs_CZ": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "cs-CZ",
   },
   "da_DK": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "da-DK",
   },
   "de_AT": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "de-AT",
   },
   "de_CH": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "de-CH",
   },
   "de_DE": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "de-DE",
   },
   "el_GR": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "el-GR",
   },
   "en_AU": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "en-AU",
   },
   "en_CA": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "en-CA",
   },
   "en_EE": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "en-EE",
   },
   "en_GB": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "en-GB",
   },
   "en_HK": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "en-HK",
   },
   "en_IE": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "en-IE",
   },
   "en_IN": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "en-IN",
   },
   "en_MY": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "en-MY",
   },
   "en_NZ": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "en-NZ",
   },
   "en_PH": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "en-PH",
   },
   "en_SG": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "en-SG",
   },
   "en_US": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "en-US",
   },
   "en_ZA": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "en-ZA",
   },
   "es_AR": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "es-AR",
   },
   "es_CL": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "es-CL",
   },
   "es_CO": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "es-CO",
   },
   "es_EC": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "es-EC",
   },
   "es_ES": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "es-ES",
   },
   "es_MX": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "es-MX",
   },
   "es_PE": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "es-PE",
   },
   "fi_FI": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "fi-FI",
   },
   "fr_BE": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "fr-BE",
   },
   "fr_CA": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "fr-CA",
   },
   "fr_FR": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "fr-FR",
   },
   "he_IL": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "he-IL",
   },
   "hr_HR": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "hr-HR",
   },
   "hu_HU": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "hu-HU",
   },
   "id_ID": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "id-ID",
   },
   "is_IS": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "is-IS",
   },
   "it_IT": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "it-IT",
   },
   "ja_JP": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "ja-JP",
   },
   "ko_KR": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "ko-KR",
   },
   "lt_LT": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "lt-LT",
   },
   "nl_NL": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "nl-NL",
   },
   "no_NO": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "no-NO",
   },
   "pl_PL": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "pl-PL",
   },
   "pt_BR": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "pt-BR",
   },
   "pt_PT": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "pt-PT",
   },
   "ro_RO": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "ro-RO",
   },
   "ru_BY": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "ru-BY",
   },
   "ru_KZ": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "ru-KZ",
   },
   "ru_RU": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "ru-RU",
   },
   "sk_SK": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "sk-SK",
   },
   "sr_RS": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "sr-RS",
   },
   "sv_SE": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "sv-SE",
   },
   "th_TH": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "th-TH",
   },
   "tr_TR": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "tr-TR",
   },
   "uk_UA": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "uk-UA",
   },
   "vi_VN": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "vi-VN",
   },
   "zh_CN": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "zh-CN",
   },
   "zh_TW": Object {
+    "deprecationReason": "Use \\"Accept-Language\\" HTTP header to specify locale.",
     "value": "zh-TW",
   },
 }

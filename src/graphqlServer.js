@@ -33,7 +33,8 @@ app.use('/', (request: $Request, response: $Response) => {
   }
 
   const token = request.header('authorization') || null;
-  const context = createContext(token);
+  const acceptLanguage = request.header('Accept-Language');
+  const context = createContext(token, acceptLanguage);
   if (process.env.NODE_ENV !== 'test' && !process.env.IS_LAMBDA) {
     const traceCollector = new TraceCollector();
     traceCollector.requestDidStart();

@@ -1,13 +1,13 @@
 // @flow
 
 import { GraphQLInputObjectType } from 'graphql';
-import GraphQLLocale from '../../../common/types/enums/Currency';
+import Currency from '../../../common/types/enums/Currency';
 
 export default new GraphQLInputObjectType({
   name: 'AvailableHotelOptionsInput',
   fields: {
     currency: {
-      type: GraphQLLocale,
+      type: Currency,
       description: 'Three-letters ISO 4217 currency code, e.g. EUR or USD',
     },
   },

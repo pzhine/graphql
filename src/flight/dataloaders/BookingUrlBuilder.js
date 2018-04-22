@@ -25,7 +25,8 @@ export async function buildBookingUrl(
     price: priceInEur,
     token,
   });
-  const urlLocale = locale && LocaleMap[locale] ? LocaleMap[locale] : 'en';
+  const urlLocale =
+    typeof locale === 'string' ? LocaleMap[locale.replace('_', '-')] : 'en';
   return `https://www.kiwi.com/${urlLocale}/booking?${query}`;
 }
 

@@ -13,6 +13,7 @@ beforeEach(() => {
     RestApiMock.onGet(
       config.restApiEndpoint.allLocations({
         term: iata,
+        locale: 'en-US',
       }),
     ).replyWithData({
       locations: [

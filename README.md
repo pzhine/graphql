@@ -62,6 +62,12 @@ Motivations: there is point in time in every application where doing groups by g
 
 These style guides are not applied in this project correctly and it's wrong. However, this guide should help to integrate them and to improve overall design of this proxy.
 
+## Localisation
+
+Some queries relies on input argument `Locale`, but soon we realized we would end-up with every query accepting locale. Therefore we opted for `Accept-Language` HTTP header.
+
+Always use just `locale` property from GraphQL context for localisation. `Locale` is deprecated.
+
 ## Output Types
 
 Every output type should provide relevant fields. This is basically why we are writing this proxy. It's good idea to write descriptions to every field because even though it may be obvious for you - it may significantly help others.

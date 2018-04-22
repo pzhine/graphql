@@ -38,6 +38,7 @@ import type {
   FAQArticleDetail,
 } from '../../FAQ/dataloaders/getFAQArticle';
 import type { FAQCategoryType } from '../../FAQ/types/outputs/FAQCategory';
+import LocaleMap from '../types/enums/LocaleMap';
 
 /**
  * FIXME:
@@ -46,6 +47,7 @@ import type { FAQCategoryType } from '../../FAQ/types/outputs/FAQCategory';
  */
 export type GraphqlContextType = {|
   // DataLoader<K, V>
+  locale: string,
   apiToken: ?string,
   dataLoader: {|
     airline: DataLoader<string, ?Airline>,
@@ -78,13 +80,21 @@ export type GraphqlContextType = {|
   _traceCollector?: Object,
 |};
 
-export function createContext(token: ?string): GraphqlContextType {
+export function createContext(
+  token: ?string,
+  acceptLanguage: ?string,
+): GraphqlContextType {
+  const locale =
+    acceptLanguage && LocaleMap.hasOwnProperty(acceptLanguage)
+      ? acceptLanguage
+      : 'en_US';
   const bookings = new BookingsLoader(token);
   const locationSuggestions = new LocationSuggestionsLoader();
   const location = new LocationLoader(locationSuggestions);
   const hotelCities = new HotelCities();
 
   return {
+    locale,
     apiToken: token,
     dataLoader: {
       airline: createAirlineLoader(),

@@ -17,10 +17,15 @@ export default new GraphQLObjectType({
       resolve: (
         { where }: DepartureArrival,
         args: Object,
-        { dataLoader, options }: GraphqlContextType,
+        { dataLoader, options, locale }: GraphqlContextType,
         { path }: GraphQLResolveInfo,
       ): Promise<LocationType> => {
-        const queryOptions = options.getOptions(path);
+        let queryOptions = options.getOptions(path) || {};
+
+        if (!queryOptions.locale) {
+          queryOptions = { ...queryOptions, locale };
+        }
+
         return dataLoader.location.load(where.code, queryOptions);
       },
     },

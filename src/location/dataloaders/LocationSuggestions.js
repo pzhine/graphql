@@ -96,7 +96,10 @@ export default class LocationSuggestionsDataloader {
 export function sanitizeOptions(options: ?Options): Object {
   if (!options) return {};
   return {
-    locale: options.locale,
+    locale:
+      typeof options.locale === 'string'
+        ? options.locale.replace('_', '-')
+        : options.locale,
     location_types: options.locationType,
   };
 }

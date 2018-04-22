@@ -51,7 +51,7 @@ export default class LocationDataLoader {
     const locations = await this.dataLoader.load({
       type: 'id',
       id,
-      locale,
+      locale: typeof locale === 'string' ? locale.replace('_', '-') : locale,
     });
     return processResponse(locations)[0];
   }

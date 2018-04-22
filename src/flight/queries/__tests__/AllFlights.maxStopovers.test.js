@@ -18,11 +18,11 @@ beforeEach(() => {
   ).replyWithData(PrgMexDataset);
 
   RestApiMock.onGet(
-    config.restApiEndpoint.allLocations({ term: 'PRG' }),
+    config.restApiEndpoint.allLocations({ term: 'PRG', locale: 'en-US' }),
   ).replyWithData(PragueDataset);
 
   RestApiMock.onGet(
-    config.restApiEndpoint.allLocations({ term: 'MEX' }),
+    config.restApiEndpoint.allLocations({ term: 'MEX', locale: 'en-US' }),
   ).replyWithData(MexicoDataset);
 });
 
