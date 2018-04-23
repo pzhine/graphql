@@ -523,11 +523,11 @@
           },
           {
             "name": "booking",
-            "description": "Flight booking by ID.",
+            "description": "Find booking by its id or databaseId.",
             "args": [
               {
                 "name": "id",
-                "description": null,
+                "description": "Both Booking id & databaseId can be used as ID.",
                 "type": {
                   "kind": "NON_NULL",
                   "name": null,
@@ -7086,6 +7086,57 @@
             "type": {
               "kind": "OBJECT",
               "name": "User",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "FAQArticleVote",
+            "description": null,
+            "args": [
+              {
+                "name": "id",
+                "description": "ID of FAQ article to receive vote.",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "ID",
+                    "ofType": null
+                  }
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "language",
+                "description": "Language in which the article is returned.",
+                "type": {
+                  "kind": "ENUM",
+                  "name": "Language",
+                  "ofType": null
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "vote",
+                "description": "Is the vote positive or negative? (\"up\"/\"down\")",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "String",
+                    "ofType": null
+                  }
+                },
+                "defaultValue": null
+              }
+            ],
+            "type": {
+              "kind": "OBJECT",
+              "name": "FAQArticle",
               "ofType": null
             },
             "isDeprecated": false,

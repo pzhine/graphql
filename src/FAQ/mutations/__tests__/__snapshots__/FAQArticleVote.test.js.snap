@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FAQArticleVote mutation should return WRONG vote 1`] = `
+Object {
+  "data": Object {
+    "FAQArticleVote": null,
+  },
+  "errors": Array [
+    [GraphQLError: Votes can only be 'up' or 'down'],
+  ],
+}
+`;
+
+exports[`FAQArticleVote mutation should vote DOWN 1`] = `
+Object {
+  "data": Object {
+    "FAQArticleVote": Object {
+      "downvotes": 64,
+      "id": "RkFRQXJ0aWNsZTozOQ==",
+      "upvotes": 36,
+    },
+  },
+}
+`;
+
+exports[`FAQArticleVote mutation should vote UP 1`] = `
+Object {
+  "data": Object {
+    "FAQArticleVote": Object {
+      "downvotes": 64,
+      "id": "RkFRQXJ0aWNsZTozOQ==",
+      "upvotes": 36,
+    },
+  },
+}
+`;

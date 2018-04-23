@@ -40,6 +40,8 @@ export default {
     FAQArticle: (faqArticleId: string) => {
       return `https://api.skypicker.com/knowledgebase/api/v1/articles/${faqArticleId}`;
     },
+    FAQArticleVote: (faqArticleId: string) =>
+      `https://api.skypicker.com/knowledgebase/api/v1/articles/${faqArticleId}/vote`,
   },
   auth: {
     basicToken: String(process.env.AUTH_BASIC_TOKEN),
