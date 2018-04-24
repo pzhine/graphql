@@ -294,26 +294,6 @@ apollo-client@^1.9.2:
   optionalDependencies:
     "@types/graphql" "0.10.2"
 
-apollo-engine-binary-darwin@0.2018.2-111-gb13195fb0:
-  version "0.2018.2-111-gb13195fb0"
-  resolved "https://registry.yarnpkg.com/apollo-engine-binary-darwin/-/apollo-engine-binary-darwin-0.2018.2-111-gb13195fb0.tgz#5e5fcbde78a5c6ad818b07ea7c850c5024b70f97"
-
-apollo-engine-binary-linux@0.2018.2-111-gb13195fb0:
-  version "0.2018.2-111-gb13195fb0"
-  resolved "https://registry.yarnpkg.com/apollo-engine-binary-linux/-/apollo-engine-binary-linux-0.2018.2-111-gb13195fb0.tgz#fede5c64dacd117012f81734f317ff60554d78ab"
-
-apollo-engine-binary-windows@0.2018.2-111-gb13195fb0:
-  version "0.2018.2-111-gb13195fb0"
-  resolved "https://registry.yarnpkg.com/apollo-engine-binary-windows/-/apollo-engine-binary-windows-0.2018.2-111-gb13195fb0.tgz#cd0a01af2842946fcb0733c125ff7bd6b3e11548"
-
-apollo-engine@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/apollo-engine/-/apollo-engine-1.0.1.tgz#a3c4ed0318754bc2ce23bc088f108ca87c26988e"
-  optionalDependencies:
-    apollo-engine-binary-darwin "0.2018.2-111-gb13195fb0"
-    apollo-engine-binary-linux "0.2018.2-111-gb13195fb0"
-    apollo-engine-binary-windows "0.2018.2-111-gb13195fb0"
-
 apollo-link-core@^0.5.0:
   version "0.5.4"
   resolved "https://registry.yarnpkg.com/apollo-link-core/-/apollo-link-core-0.5.4.tgz#8efd4cd747959872a32f313f0ccfc2a76b396668"

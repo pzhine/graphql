@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "algoliasearch": "^3.24.9",
-    "apollo-engine": "^1.0.1",
     "apollo-tracing": "^0.0.9",
     "aws-serverless-express": "^3.0.2",
     "chalk": "^2.0.1",

@@ -4,6 +4,7 @@ import express from 'express';
 import graphqlHTTP from 'express-graphql';
 import cors from 'cors';
 import compression from 'compression';
+import { formatEntry, logEntry } from 'graphql-optics-tracer';
 
 import type { $Request, $Response } from 'express';
 import {
@@ -48,7 +49,7 @@ app.use('/', (request: $Request, response: $Response) => {
 export default app;
 
 function createGraphqlServer(schema, context) {
-  return graphqlHTTP({
+  return graphqlHTTP((request, response, graphQLParams) => ({
     schema: instrumentSchemaForTracing(schema),
     pretty: false,
     graphiql: true,
@@ -68,13 +69,18 @@ function createGraphqlServer(schema, context) {
       Logger.error(errorMessage);
       return error;
     },
-    extensions: () => {
+    extensions: req => {
       const traceCollector = context._traceCollector;
       if (!traceCollector) return {};
       traceCollector.requestDidEnd();
-      return {
-        tracing: formatTraceData(traceCollector),
-      };
+
+      // graphql-optics-tracer
+      const definitions = req.document.definitions;
+      const graphql = graphQLParams.query;
+      const metrics = formatTraceData(traceCollector);
+      const entry = formatEntry({ request: { definitions, graphql }, metrics });
+      logEntry({ entry });
+      return {};
     },
-  });
+  }));
 }
